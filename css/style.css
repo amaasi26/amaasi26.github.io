@@ -164,7 +164,7 @@ a{
 }
 
 .navbar{
-    min-height: 70px;
+    min-height: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -173,13 +173,14 @@ a{
 
 .nav-menu{
     display: flex;
+    
     justify-content: space-evenly;
     align-items: center;
     gap: 60px;
 }
 
 .nav-branding{
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 
 .nav-link{
@@ -220,10 +221,14 @@ a{
     .intro {
         position: relative;
 }
+    
+.logo{
+    max-width: 80px;
+}
 
     .nav-branding{
         grid-area: img;
-        min-width: 100px;
+        min-width: 50px;
         }
     
     .section__subtitle--intro {
