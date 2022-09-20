@@ -310,6 +310,14 @@ position: relative;
     align-items: center;
 }
 
+.portfolio__img {
+    width: 100%
+}
+
+.mr-salvadors-work {
+    width: 100%
+}
+
 .footer {
 background: #111;
 color: var(--clr-accent);
