@@ -123,10 +123,12 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title--intro {
     font-weight: bold;
+    
 }
 
 .section__title--intro strong {
     display: block
+    
 }
 
 
@@ -149,9 +151,13 @@ h3 { font-size: var(--fs-h3) }
 
 header{
     background-color: #262626;
+    opacity: 0.8;
     position: fixed;
     width: 100%
+    
 }
+
+
 
 li{
     list-style: none;
@@ -192,6 +198,8 @@ a{
     color: dodgerblue;
 }
 
+
+
 .hamburger{
     display: none;
     cursor: pointer;
@@ -214,18 +222,17 @@ a{
 @media(max-width:768px){
     .hamburger{
         display: block;
-        
     }
 
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
     .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(-45deg);
         
     }
     .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(45deg);
         
     }
 
@@ -235,10 +242,11 @@ a{
         top: 70px;
         gap: 0;
         flex-direction: column;
+        
         background-color: #262626;
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: background-color 0.3s ease;
     }
 
     .nav-item{
@@ -263,12 +271,10 @@ max-width: 80px;
     min-width: 50px;
     }
 
-.section__title--intro{
-    position:relative;
-}
+
 
 .section__subtitle--intro {
-    align-self: start;
+    align-items: center;
     grid-column: -1 / 1;
 }
 
