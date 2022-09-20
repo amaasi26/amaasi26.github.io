@@ -15,6 +15,7 @@
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
+    --fs-p: 1.25rem;
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
@@ -68,7 +69,7 @@ img {
     display: inline-block;
     padding: .5em 1.5em;
     background: var(--clr--lgreen);
-    accent-color: var(--clr-dark);
+    text-decoration-color: #0000;
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem
@@ -134,7 +135,7 @@ h3 { font-size: var(--fs-h3) }
 
 .section__subtitle--about {
     margin: 0;
-    font-size: var(--fs-h3);
+    
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
@@ -239,7 +240,7 @@ a{
     .nav-menu{
         position:fixed;
         left: -100%;
-        top: 70px;
+        top: 50px;
         gap: 0;
         flex-direction: column;
         
@@ -297,7 +298,7 @@ max-width: 80px;
 background-color:  #000000;
 
 
-color: var(--clr-introbg);
+color: var(--clr-accent);
 text-align: center;
 }
 
@@ -306,8 +307,18 @@ color: var(--clr-accent);
 position: relative;
 }
 
+
+
 .about-me {
-    align-items: center;
+    text-align: center;
+}
+
+.work {
+    text-align: center;
+}
+
+.section__title {
+    font-size: var(--fs-p);
 }
 
 .portfolio__img {
